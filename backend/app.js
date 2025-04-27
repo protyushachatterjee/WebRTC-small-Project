@@ -5,7 +5,12 @@ const http = require("http");
 const server = http.createServer(app)
 const io = socketIO(server);
 const path = require("path");
+const dotenv=require("dotenv");
+dotenv.config();
 const port = process.env.PORT || 3000;
+
+
+
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
