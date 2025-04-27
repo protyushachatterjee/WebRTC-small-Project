@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    overflow: hidden;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a; /* dark slate background */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Video Container */
+#videos {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Video Players */
+.video-player {
+    width: 40vw;
+    height: 70vh;
+    background: #1e293b; /* soft dark background */
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Controls Container */
+#controls {
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* background-color: wheat; */
+}
+
+/* Individual Control Button */
+.control-container {
+    background: #334155;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Hover Effect */
+.control-container:hover {
+    background: #475569;
+    transform: scale(1.05);
+}
+
+/* SVG Icons */
+.control-container svg {
+    fill: white;
+}
+#disconnectButton {
+    background: #ef4444; /* red */
+}
+#disconnectButton:hover {
+    background: #c71f1f; /* darker red */
+}
